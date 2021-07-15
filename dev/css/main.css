@@ -1,3 +1,43 @@
-html {
-    width: 100%;
+html,
+body {
+  width: 100%;
+  background-color: seashell;
 }
+
+.main-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 32px auto;
+  background-color: snow;
+  padding: 16px;
+}
+
+.gsk-inline {
+  display: inline;
+  width: fit-content;
+}
+
+.gsk-pointer {
+  cursor: pointer;
+}
+
+.gsk-not-allowed {
+  cursor: not-allowed;
+}
+
+
+
+/*Start ... Hide the up down arrow on text field for numbers*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*End ... Hide the up down arrow on text field for numbers*/
